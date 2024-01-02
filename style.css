@@ -5,6 +5,7 @@
     font-family: 'poppins', sans-serif;
 }
 .header{
+    position: relative;
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/banner.png);
@@ -84,6 +85,31 @@ nav{
 }
 .search-bar form label{
     font-weight: 600;
+}
+
+/* ---------Loader------------- */
+
+.spinning-Loader{
+    width: 70px;
+    height: 70px;
+    border: 5px solid grey;
+    border-top: 5px solid black;
+    border-radius: 50%;
+    animation: loader 1s linear infinite;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+}
+
+@keyframes loader{
+    0%{
+        
+        transform: rotate(0deg); 
+    }
+    100%{
+    
+        transform: rotate(360deg); 
+    }
 }
 
 /* ---------exclusives------------- */
